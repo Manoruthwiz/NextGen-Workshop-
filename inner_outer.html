@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner_Outer</title>
+</head>
+<body>
+    <h1>Inner and Outer Function Example</h1>
+    <p>This example demonstrates the use of inner and outer functions in JavaScript.</p>
+    <script>
+    function outerFunction(x, y) {
+        console.log("Outer function called with:", x, y);
+        
+        function innerFunction(a, b) {
+            console.log("Inner function called");
+            return a + b;
+        }
+        
+        return innerFunction(x, y);
+    }
+    </script>
+</body>
+</html>
